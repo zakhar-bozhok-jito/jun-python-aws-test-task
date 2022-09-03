@@ -59,4 +59,5 @@ You can update any part of code
 3. Instance C has already booted, but we still proxifying using instance B.
 ![AWS algo 3](https://drive.google.com/uc?export=view&id=1DUwTYexnfWUxHPkyB-A2xarrf3Rrc8k2)
 4. And after 5 minutes passes or we receive 403 we switch proxifying to instance C, and during that terminating instance B and creating another instance instead of B, for example D. And the algorithm repeats from step 1 till all images are downloaded. 
+
 ![AWS algo 4](https://drive.google.com/uc?export=view&id=1M-EhgG7sRLkez2chdId32zrdjN2DwDLH)
