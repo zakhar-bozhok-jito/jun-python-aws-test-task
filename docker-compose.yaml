@@ -5,9 +5,6 @@ services:
     container_name: "rabbitmq"
     logging:
       driver: none
-#    ports:
-#      - 5672:5672
-#      - 15672:15672
 
   message_generator:
     container_name: "message_generator"
@@ -42,4 +39,4 @@ services:
       - "python3"
       - "client.py"
     deploy:
-      replicas: 12
+      replicas: 24

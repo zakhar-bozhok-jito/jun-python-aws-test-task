@@ -30,7 +30,7 @@ def getDeafultTileCoordinate():
 
 def getDefaultDownloadGridSize():
     # x_size, y_size
-    return (100, 100)
+    return (900, 900)
 
 if __name__ == "__main__":
     amqpConfig = AMQPConfig.fromENV()
