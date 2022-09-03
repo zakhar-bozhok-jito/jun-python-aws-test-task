@@ -21,21 +21,34 @@ This is how it looks like for now:
 To have another public IP in requests we can create instances in cloud like AWS.
 Each instance created by AWS will have differenet public IP.
 We will create instances on AWS with proxy pre-installed (it can be "mitm-proxy", or any other you like) and then we can connect from our consumers to them.
+
 ## Requirements
 Please, make sure your code follows these requirements in other way solution won't be evaluated
+- Solution should work just right after I pull repo with code. (Write needed .sh scripts, or requirements.txt etc. ...)
 - Cloud provider as you already guessed - AWS.
 - Images should to be saved in './tiles'
 - Filenames format should be "\<x\>\_\<y\>\_\<zoom\>.png"
 - Solution should switch to another proxy instance either after 5 minutes or after getting ERROR 403 (forbidden).
 - There are no pre-created instances in AWS, you have to create them by your own using python library for automation
 - After your solution finishes working it should remove any resources created in AWS
-- You have to use git as version control system and store your repo in Github or any other similar system. The easiest way to start workong on the task is to [fork](https://github.com/zakhar-bozhok-jito/jun-python-aws-test-task/fork) this repo. 
+- You have to use git as version control system and store your repo in Github or any other similar system. The easiest way to start working on the task is to [fork](https://github.com/zakhar-bozhok-jito/jun-python-aws-test-task/fork) this repo.
+- Solution should work with more than one replicas of client i.e. multiprocess solution
+
+## What will be checked during test task evaluation?
+- Solution should correspond to requirements
+- Understanding and usage of [SOLID](https://en.wikipedia.org/wiki/SOLID)
+- Understanding and usage of [OOP](https://en.wikipedia.org/wiki/Object-oriented_programming) or FP
+- [Code style consistency](https://blog.devgenius.io/why-code-consistency-is-important-9d95bdebcef4)
+- Code readability and [cognitive complexity](https://docs.codeclimate.com/docs/cognitive-complexity#:~:text=Cognitive%20Complexity%20is%20a%20measure,be%20to%20read%20and%20understand.)
+- Efficiency of solution
+- Clean git history with understandable commit messages
 
 ## Suggested implementation
-You can update any part of code, but  and filenames should look like 
-- Use free tier instances obviously because they are free.
+You can update any part of code
+- Use free tier instances on AWS. Obviously because they are free.
 - To easily create instances with proxy pre-installed you can create AMI images based on free-tier images. 
 - I suggest you to use "boto3" library for python or any you want.
+- To pass info to downloaders I suggest you to use already existing RabbitMQ, and in generatl read more about AMQP and related topics.
 - How in my opnionion your solution shoud look like
 ![With Proxy](https://drive.google.com/uc?export=view&id=1ZukJEYE1tOnkU0NoiNLdDmu_Ta2e7WGE)
 - Algorithm of switching the proxies:
