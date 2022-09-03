@@ -27,19 +27,23 @@ Please, make sure your code follows these requirements in other way solution won
 - Images should to be saved in './tiles'
 - Filenames format should be "\<x\>\_\<y\>\_\<zoom\>.png"
 - Solution should switch to another proxy instance either after 5 minutes or after getting ERROR 403 (forbidden).
-- 
+- There are no pre-created instances in AWS, you have to create them by your own using python library for automation
+- After your solution finishes working it should remove any resources created in AWS
+- You have to use git as version control system and store your repo in Github or any other similar system. The easiest way to start workong on the task is to [fork](https://github.com/zakhar-bozhok-jito/jun-python-aws-test-task/fork) this repo. 
 
 ## Suggested implementation
 You can update any part of code, but  and filenames should look like 
-- Cloud provider as you already guessed - AWS.
 - Use free tier instances obviously because they are free.
 - To easily create instances with proxy pre-installed you can create AMI images based on free-tier images. 
 - I suggest you to use "boto3" library for python or any you want.
-- 
-
-
+- How in my opnionion your solution shoud look like
 ![With Proxy](https://drive.google.com/uc?export=view&id=1ZukJEYE1tOnkU0NoiNLdDmu_Ta2e7WGE)
+- Algorithm of switching the proxies:
+1. At the beginning we have 2 proxy instances created, and traffic is proxified only by instance A
 ![AWS algo 1](https://drive.google.com/uc?export=view&id=1gLNwFjlm9X-873mtVZ8l7EWhWZE6pMYk)
+2. After either 5 minutes passes or we receive 403 we switch proxifying to instance B and during that we terminate proxy instance A and booting up instance C
 ![AWS algo 2](https://drive.google.com/uc?export=view&id=1UI7FhJqrdOqLP-si8tZeGjEfQokuMmtp)
+3. Instance C has already booted, but we still proxifying using instance B.
 ![AWS algo 3](https://drive.google.com/uc?export=view&id=1DUwTYexnfWUxHPkyB-A2xarrf3Rrc8k2)
+4. And after 5 minutes passes or we receive 403 we switch proxifying to instance C, and during that terminating instance B and creating another instance instead of B, for example D. And the algorithm repeats from step 1 till all images are downloaded. 
 ![AWS algo 4](https://drive.google.com/uc?export=view&id=1M-EhgG7sRLkez2chdId32zrdjN2DwDLH)
