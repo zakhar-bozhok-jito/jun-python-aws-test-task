@@ -33,6 +33,7 @@ Please, make sure your code follows these requirements in other way solution won
 - After your solution finishes working it should remove any resources created in AWS
 - You have to use git as version control system and store your repo in Github or any other similar system. The easiest way to start working on the task is to [fork](https://github.com/zakhar-bozhok-jito/jun-python-aws-test-task/fork) this repo.
 - Solution should work with more than one replicas of client i.e. multiprocess solution
+- Add enough logging to understand key events like proxy switching, errors, warning, etc., make reviewer experience as easy as possible to understand what is happening with your program.
 
 ## What will be checked during test task evaluation?
 - Solution should correspond to requirements
