@@ -10,7 +10,7 @@ We have 3 main components here:
 
 *Message generator* creates messages with enough information to create a link and download the file.
 Later after consumer sees the message it takes it from the queue and downloads the image.
-This way wee can easily specify in *docker-compose replicas: N*, and there will be as many "downloaders" as you want.
+This way we can easily specify in *docker-compose replicas: N*, and there will be as many "downloaders" as you want.
 This solution works perfectly, but some services does not allow to download too much data from their servers, usually they ban by IP.
 The goal is to update current soluton to be able to send requests using different IP addresses so requests won't be blocked.
 
@@ -34,6 +34,7 @@ Please, make sure your code follows these requirements in other way solution won
 - You have to use git as version control system and store your repo in Github or any other similar system. The easiest way to start working on the task is to [fork](https://github.com/zakhar-bozhok-jito/jun-python-aws-test-task/fork) this repo.
 - Solution should work with more than one replicas of client i.e. multiprocess solution
 - Add enough logging to understand key events like proxy switching, errors, warning, etc., make reviewer experience as easy as possible to understand what is happening with your program.
+- Use env variables to connect to AWS (AWS_SERVER_PUBLIC_KEY, AWS_SERVER_SECRET_KEY) like in [example](https://stackoverflow.com/questions/45981950/how-to-specify-credentials-when-connecting-to-boto3-s3)
 
 ## What will be checked during test task evaluation?
 - Solution should correspond to requirements

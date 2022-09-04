@@ -35,6 +35,8 @@ services:
       - AMQP_PORT=5672
       - QUEUE_NAME=tiles
       - TILES_FOLDER=/tiles
+      - AWS_SERVER_PUBLIC_KEY=pub_key
+      - AWS_SERVER_SECRET_KEY=secret_key
     command:
       - "python3"
       - "client.py"
