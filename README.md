@@ -1,5 +1,5 @@
 # Junior Python developer test task (AWS)
-![python3](https://img.shields.io/badge/lang-python3-yellow)
+![python3](https://img.shields.io/badge/-python3-yellowgreen)
 ![rabbit](https://img.shields.io/badge/-RabbitMQ-green)
 ![docker](https://img.shields.io/badge/-Docker-orange)
 ![AWS](https://img.shields.io/badge/-AWS-brightgreen)
