@@ -1,4 +1,7 @@
 # Junior Python developer test task (AWS)
+## Helpful links
+To submit your application, please put your results into this [form](https://forms.gle/hLrkZvZDVFkBG7Wy6)
+Feel free to ask questions [here](https://app.sli.do/event/es9DAm5Y8SipuNvhzqp96Q/live/questions)
 ## Overiview
 This repository is an example of how to download 100k [tiles](https://www.maptiler.com/google-maps-coordinates-tile-bounds-projection/#1/180.00/-46.60) (or any other amount) from Google tile server. 
 Key point here is that it uses Message Broker (RabbitMQ) for passing messages between processes.
