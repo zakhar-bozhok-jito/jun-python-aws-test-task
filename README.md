@@ -1,5 +1,6 @@
 # Junior Python developer test task (AWS)
 ## Helpful links
+![python3](https://img.shields.io/badge/lang-python3-yellow)
 To submit your application, please put your results into this [form](https://forms.gle/hLrkZvZDVFkBG7Wy6)
 Feel free to ask questions [here](https://app.sli.do/event/es9DAm5Y8SipuNvhzqp96Q/live/questions)
 ## Overiview
