@@ -1,4 +1,7 @@
 # Junior Python developer test task (AWS)
+![Project language][badge_language]
+![Docker][badge_docker]
+[![Do something awesome][badge_use_template]][use_this_repo_template]
 ## Helpful links
 To submit your application, please put your results into this [form](https://forms.gle/hLrkZvZDVFkBG7Wy6)
 Feel free to ask questions [here](https://app.sli.do/event/es9DAm5Y8SipuNvhzqp96Q/live/questions)
