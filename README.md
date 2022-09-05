@@ -1,5 +1,8 @@
 # Junior Python developer test task (AWS)
 ![python3](https://img.shields.io/badge/lang-python3-yellow)
+![rabbit](https://img.shields.io/badge/-RabbitMQ-green)
+![docker](https://img.shields.io/badge/-Docker-orange)
+![AWS](https://img.shields.io/badge/-AWS-brightgreen)
 ## Helpful links
 To submit your application, please put your results into this [form](https://forms.gle/hLrkZvZDVFkBG7Wy6)
 Feel free to ask questions [here](https://app.sli.do/event/es9DAm5Y8SipuNvhzqp96Q/live/questions)
